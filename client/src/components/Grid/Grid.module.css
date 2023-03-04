@@ -1,0 +1,81 @@
+.FlexContainerGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+    text-align: center;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.ContainerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px 15px;
+    margin: 2rem;
+    height: 80%;
+    text-align: center;
+}
+
+.Area1 {
+    grid-area: 1 / 2 / 3 / 3;
+    border: 5px solid #3E5622;
+    border-radius: 20px;
+}
+
+.Area2 {
+    grid-area: 3 / 1 / 4 / 3;
+    border: 5px solid #222E50;
+    border-radius: 20px;
+}
+
+.Area3 {
+    grid-area: 2 / 3 / 3 / 4;
+    border: 5px solid #8BBF9F;
+    border-radius: 20px;
+}
+
+.Area4 {
+    grid-area: 1 / 1 / 4 / 2;
+    border: 5px solid #989FCE ;
+    border-radius: 20px;
+}
+
+.Area3 {
+    grid-area: 2 / 3 / 4 / 4;
+}
+
+.Area1,
+.Area2,
+.Area3,
+.Area4 {
+    /* margin: 0; */
+    /* padding: 0; */
+    font-family: 'Baloo Bhai 2', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.Area1:hover {
+    background-color: #3E5622;
+    transition: 0.5s;
+    color: #D6BA73;
+}
+.Area2:hover {
+    background-color: #222E50;
+    transition: 0.5s;
+    color: #D6BA73;
+}
+.Area3:hover {
+    background-color: #8BBF9F;
+    transition: 0.5s;
+    color: antiquewhite;
+}
+.Area4:hover {
+    background-color: #989FCE;
+    transition: 0.5s;
+    color: antiquewhite;
+}
