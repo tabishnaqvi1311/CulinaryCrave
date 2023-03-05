@@ -108,11 +108,11 @@ label {
     border-bottom: 3px solid antiquewhite;
     transition: 0.5s;
 }
-
+/* 
 hr {
     position: absolute;
     z-index: 0;
-}
+} */
 
 @keyframes fadeIn2 {
     0% {
