@@ -10,11 +10,23 @@ const RecipeSchema = new mongoose.Schema({
         type: Array,
         required: true
       },
-      email: {
+      steps: {
+        type: Array,
+        required: true
+      },
+      timers: {
+        type: Array,
+        required: true
+      },
+      imageURL: {
         type: String,
         required: true
       },
-      recipeName: {
+      rating: {
+        type: Number,
+        required: true
+      },
+      mealType: {
         type: String,
         required: true
       }

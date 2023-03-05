@@ -40,6 +40,14 @@ app.post('/submit', async(req,res) => {
     }
 });
 
+
+app.get('/api/recipes', async (req,res) => {
+    const recipes = await Recipe.find().limit(9);
+    console.log(recipes);
+    res.json(recipes)
+})
+
+
 app.listen(port, ()=> {
     console.log(`Server running on http://localhost:${port}`);
 });
