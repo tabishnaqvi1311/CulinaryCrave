@@ -7,14 +7,14 @@ const RecipeSchema = new mongoose.Schema({
         required: true
       },
       ingredients: {
-        type: [String],
+        type: Array,
         required: true
       },
-      instructions: {
-        type: [String],
+      email: {
+        type: String,
         required: true
       },
-      image: {
+      recipeName: {
         type: String,
         required: true
       }
