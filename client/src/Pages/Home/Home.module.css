@@ -48,7 +48,7 @@
 }
 
 .publish {
-    height: 100vh;
+    height: 110vh;
     background-color: #D6BA73;
 } 
 
@@ -92,7 +92,7 @@ label {
     background-color: transparent;
     width: 80vw;
     margin: 20px;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
     font-size: larger;
 }
 .submitButton {
@@ -105,7 +105,7 @@ label {
 }
 .formInp:focus {
     outline: none;
-    border-bottom: 2px solid antiquewhite;
+    border-bottom: 3px solid antiquewhite;
     transition: 0.5s;
 }
 
