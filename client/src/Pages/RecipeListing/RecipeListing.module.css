@@ -1,0 +1,23 @@
+.topPicks {
+    color: #222e50;
+    margin: 20px;
+    font-size: 50px;
+}
+
+.hori {
+    margin: 20px;
+    border: 2px solid #d6ba73;
+}
+
+.threepicks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.pick1,
+.pick2,
+.pick3 {
+    border: 1px solid red;
+    padding: 5rem;
+}
