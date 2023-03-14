@@ -43,7 +43,7 @@ const Home = () => {
     <>
     <section className={styles.mainSection}>
       <div className={styles.mainSlogan}>
-        <img src={ing} alt='ingredients' height={400} width={400} style={{
+        <img className={styles.imgtop} src={ing} alt='ingredients' height={400} width={400} style={{
           borderTopLeftRadius: '40px',
           borderBottomLeftRadius: '40px',
           position: 'absolute',

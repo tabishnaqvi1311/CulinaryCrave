@@ -47,8 +47,13 @@
     background-color: antiquewhite;
 }
 
+/* .gridSection {
+    height: 100vh;
+    background-color: #D6BA73;
+} */
+
 .publish {
-    height: 110vh;
+    height: 90vh;
     background-color: #D6BA73;
 } 
 
@@ -108,6 +113,87 @@ label {
     border-bottom: 3px solid antiquewhite;
     transition: 0.5s;
 }
+
+/* responiveness */
+
+@media (max-width: 2560px) {
+    .mainSloganText {
+        font-size: 11rem;
+    }
+    .subSlogan {
+        font-size: 5rem;
+    }
+    .text {
+        font-size: 2.2rem;
+    }
+    .formContent {
+        font-size: 8rem;
+    }
+    .formContent2 {
+        font-size: 3rem;
+    }
+    .formLanding {
+        font-size: 1.6rem;
+    }
+    .formLanding label {
+        font-size: 2.2rem;
+    }
+}
+@media (max-width: 1942px){
+    .mainSloganText {
+        font-size: 8rem;
+    }
+    .subSlogan {
+        font-size: 4rem;
+    }
+    .text {
+        font-size: 2rem;
+    }
+    .formContent {
+        font-size: 4rem;
+    }
+    .formContent2{
+        font-size: 2rem;
+    }
+    .formLanding {
+        font-size: 0.9rem;
+    }
+    .formLanding label {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1520px){
+    .mainSection{
+        height: 120vh;
+    }
+    .mainSloganText {
+        font-size: 5.5rem;
+    }
+    .subSlogan {
+        font-size: 2.5rem;
+    }
+    .text {
+        font-size: 1.3rem;
+    }
+    .publish {
+        height: 120vh;
+    }
+    .formContent {
+        font-size: 4rem;
+    }
+    .formContent2{
+        font-size: 2rem;
+    }
+    .formLanding {
+        font-size: 0.9rem;
+    }
+    .formLanding label {
+        font-size: 1.2rem;
+    }
+}
+
+
 /* 
 hr {
     position: absolute;
