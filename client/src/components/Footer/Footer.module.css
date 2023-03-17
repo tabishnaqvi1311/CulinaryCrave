@@ -3,3 +3,9 @@
     color: aliceblue;
     padding: 50px;
 }
+
+@media (min-width: 100px) and (max-width: 919px){
+    .footerDiv{
+        width: 90vh;
+    }
+}

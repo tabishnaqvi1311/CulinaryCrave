@@ -82,4 +82,11 @@
 }
 
 /* responsiveness  */
-
+@media (min-width: 1900px){
+    .Area1,
+    .Area2,
+    .Area3,
+    .Area4 {
+        font-size: 2.3rem;
+    }
+}

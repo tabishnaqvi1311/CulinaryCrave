@@ -43,11 +43,11 @@ const Home = () => {
     <>
     <section className={styles.mainSection}>
       <div className={styles.mainSlogan}>
-        <img className={styles.imgtop} src={ing} alt='ingredients' height={400} width={400} style={{
+        <img className={styles.imgtop} src={ing} alt='ingredients' style={{
           borderTopLeftRadius: '40px',
           borderBottomLeftRadius: '40px',
           position: 'absolute',
-          marginTop: '100px',
+          marginTop: '37rem',
           zIndex: '0',
           right: '0',
           boxShadow: '0px 0px 10px 1px grey'
@@ -74,13 +74,13 @@ const Home = () => {
       <div className={styles.frm}>
         <form className={styles.formLanding} autoComplete='off' onSubmit={handleSubmit}>
 
-          <label for='name'>Your Name</label>
+          <label htmlFor='name'>Your Name</label>
           <input type='text' name='name' required className={styles.formInp} value={userName} onChange={event => setuserName(event.target.value)}/>
 
-          <label for='email'>Your Email</label>
+          <label htmlFor='email'>Your Email</label>
           <input type='email' name='email' required className={styles.formInp} value={userEmail} onChange={event =>setuserEmail(event.target.value)}/>
 
-          <label for='recipeName'>Give your Recipe a Name</label>
+          <label htmlFor='recipeName'>Give your Recipe a Name</label>
           <input type='text' name='recipeName'  required className={styles.formInp} value={RecipeName} onChange={event => setRecipeName(event.target.value)}/>
 
           <label>What did you use?</label>

@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
       <nav className={styles.wrap}>
         <div className={styles.left}>
-          <img src={logo} alt='logo' height='100px' width='100px' style={{
+          <img className={styles.navimg} src={logo} alt='logo' height='100px' width='100px' style={{
             borderRadius: '50px'
           }}/>
         </div>

@@ -42,6 +42,11 @@
     text-align: justify;
 }
 
+.imgtop{
+    height: 400px; 
+    width: 400px;
+}
+
 .SwiperRecip {
     height: 100vh;
     background-color: antiquewhite;
@@ -101,12 +106,15 @@ label {
     font-size: larger;
 }
 .submitButton {
-    width: 7%;
-    margin: 5px;
-    padding: 5px;
+    width: 100%;
+    margin-top: 12px;
+    padding: 13px;
     color: white;
     background-color: black;
     border-radius: 10px;
+    font-size: 30px;
+    font-family: 'Baloo Bhai 2', cursive;
+
 }
 .formInp:focus {
     outline: none;
@@ -116,80 +124,186 @@ label {
 
 /* responiveness */
 
-@media (max-width: 2560px) {
-    .mainSloganText {
-        font-size: 11rem;
-    }
-    .subSlogan {
-        font-size: 5rem;
-    }
-    .text {
-        font-size: 2.2rem;
-    }
-    .formContent {
-        font-size: 8rem;
-    }
-    .formContent2 {
-        font-size: 3rem;
-    }
-    .formLanding {
-        font-size: 1.6rem;
-    }
-    .formLanding label {
-        font-size: 2.2rem;
+
+@media (min-width: 2300px){
+    .imgtop{
+        height: 500px;
+        width: 500px;
     }
 }
-@media (max-width: 1942px){
-    .mainSloganText {
-        font-size: 8rem;
+
+@media (min-width: 1900px){
+    .mainSloganText{
+        font-size: 10rem;
     }
-    .subSlogan {
-        font-size: 4rem;
+    .subSlogan{
+        font-size: 5rem;
     }
-    .text {
+    .text{
+        font-size: 2.2rem;
+    }
+    .formContent{
+        font-size: 7rem;
+    }
+    .formContent2{
+        font-size: 3rem;
+    }
+    .formLanding label {
+        font-size: 1.7rem;
+    }
+    .formLanding input{
         font-size: 2rem;
     }
-    .formContent {
+    /* .imgtop{
+        display: none;
+    } */
+}
+@media (min-width: 1560px) and (max-width: 1899px){
+    .mainSloganText{
+        font-size: 8rem;
+    }
+    .subSlogan{
+        font-size: 4rem;
+    }
+    .text{
+        font-size: 2rem;
+    }
+    .formContent{
+        font-size: 5.5rem;
+    }
+    .formContent2{
+        font-size: 2.7rem;
+    }
+    .formLanding label {
+        font-size: 1.7rem;
+    }
+    .formLanding input{
+        font-size: 2rem;
+    }
+    .submitButton{
+        padding: 5px;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1360px) and (max-width: 1559px){
+    .mainSloganText{
+        font-size: 7rem;
+    }
+    .subSlogan{
+        font-size: 3.5rem
+    }
+    .text{
+        font-size: 2rem;
+    }
+    .formContent{
+        font-size: 5.5rem;
+    }
+    .formContent2{
+        font-size: 2.7rem;
+    }
+    .formLanding label {
+        font-size: 1.7rem;
+    }
+    .formLanding input{
+        font-size: 2rem;
+    }
+    .submitButton{
+        padding: 5px;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1223px) and (max-width: 1359px){
+    .mainSloganText{
+        font-size: 6.5rem;
+    }
+    .subSlogan{
+        font-size: 3rem;
+    }
+    .text{
+        font-size: 1.8rem;
+    }
+}
+@media (min-width: 1056px) and (max-width: 1222px){
+    .mainSloganText{
+        font-size: 5.5rem;
+    }
+    .subSlogan{
+        font-size: 2.5rem;
+    }
+    .text{
+        font-size: 1.65rem;
+    }
+    .formContent{
         font-size: 4rem;
     }
     .formContent2{
         font-size: 2rem;
     }
-    .formLanding {
-        font-size: 0.9rem;
-    }
     .formLanding label {
+        font-size: 1.7rem;
+    }
+    .formLanding input{
+        font-size: 1.8rem;
+    }
+    .submitButton{
+        padding: 5px;
+        font-size: 1.5rem;
+    }
+    .imgtop{
+        height: 380px;
+        width: 380px;
+    }
+}
+@media (min-width: 995px) and (max-width: 1055px){
+    .mainSloganText{
+        font-size: 5rem;
+    }
+    .subSlogan{
+        font-size: 3rem;
+    }
+    .text{
+        font-size: 1.65rem;
+    }
+    .formLanding label, .formLanding input {
+        font-size: 1.4rem;
+    }
+    .imgtop{
+        height: 370px;
+        width: 370px;
+    }
+}
+/* entering the mobile arena  */
+@media (min-width: 920px) and (max-width: 994px){
+    .subSlogan{
+        font-size: 2.3rem;
+    }
+    .text{
+        font-size: 1.5rem;
+    }
+    .imgtop{
+        height: 350px;
+        width: 350px;
+    }
+    .formLanding label{
+        font-size: 1.4rem;
+    }
+    .formLanding input {
+        font-size: 1.2rem;
+    }
+    .submitButton{
         font-size: 1.2rem;
     }
 }
 
-@media (max-width: 1520px){
-    .mainSection{
-        height: 120vh;
+@media (min-width: 100px) and (max-width: 919px){
+    .mainSection, .SwiperRecip, .gridSection, .publish{
+        width: 80vh;
     }
-    .mainSloganText {
-        font-size: 5.5rem;
+    .imgtop{
+        display: none;
     }
-    .subSlogan {
-        font-size: 2.5rem;
-    }
-    .text {
-        font-size: 1.3rem;
-    }
-    .publish {
-        height: 120vh;
-    }
-    .formContent {
-        font-size: 4rem;
-    }
-    .formContent2{
-        font-size: 2rem;
-    }
-    .formLanding {
-        font-size: 0.9rem;
-    }
-    .formLanding label {
-        font-size: 1.2rem;
+    .textWrap{
+        width: 80%;
     }
 }
 
