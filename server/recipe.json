@@ -1,6 +1,7 @@
 [
     {
         "name": "Crock Pot Roast",
+        "mealType": "dinner",
         "ingredients": [
             {
                 "quantity": "1",
@@ -34,17 +35,11 @@
             "Pour the water around the roast.",
             "Cook on low for 7-9 hours."
         ],
-        "timers": [
-            0,
-            0,
-            0,
-            420
-        ],
-        "imageURL": "http://img.sndimg.com/food/image/upload/w_266/v1/img/recipes/27/20/8/picVfzLZo.jpg",
-        "originalURL": "http://www.food.com/recipe/to-die-for-crock-pot-roast-27208"
+        "time": 10
     },
     {
         "name": "Roasted Asparagus",
+        "mealType": "lunch",
         "ingredients": [
             {
                 "quantity": "1 lb",
@@ -74,23 +69,11 @@
             "The tips of the spears will get very brown but watch them to prevent burning.",
             "They are great plain, but sometimes I serve them with a light vinaigrette if we need something acidic to balance out our meal."
         ],
-        "timers": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            10,
-            0,
-            0,
-            0
-        ],
-        "imageURL": "http://img.sndimg.com/food/image/upload/w_266/v1/img/recipes/50/84/7/picMcSyVd.jpg",
-        "originalURL": "http://www.food.com/recipe/roasted-asparagus-50847"
+        "time": 8
     },
     {
         "name": "Curried Lentils and Rice",
+        "mealType": "lunch",
         "ingredients": [
             {
                 "quantity": "1 quart",
@@ -125,17 +108,11 @@
             "Add rice and simmer for 20 minutes.",
             "Enjoy!"
         ],
-        "timers": [
-            0,
-            0,
-            20,
-            20,
-            0
-        ],
-        "imageURL": "http://dagzhsfg97k4.cloudfront.net/wp-content/uploads/2012/05/lentils3.jpg"
+        "time": 20
     },
     {
         "name": "Big Night Pizza",
+        "mealType": "dinner",
         "ingredients": [
             {
                 "quantity": "5 teaspoons",
@@ -187,16 +164,7 @@
             "Bake at 400 deg Fahrenheit for 15 minutes.",
             "Enjoy!"
         ],
-        "timers": [
-            15,
-            60,
-            0,
-            0,
-            0,
-            15,
-            0
-        ],
-        "imageURL": "http://upload.wikimedia.org/wikipedia/commons/c/c7/Spinach_pizza.jpg"
+        "time": 15
     },
     {
         "name": "Cranberry and Apple Stuffed Acorn Squash Recipe",
@@ -242,18 +210,7 @@
             "Bake for 30-40 more minutes, until squash tender.",
             "Enjoy!"
         ],
-        "timers": [
-            0,
-            0,
-            0,
-            30,
-            0,
-            0,
-            30,
-            0
-        ],
-        "imageURL": "http://elanaspantry.com/wp-content/uploads/2008/10/acorn_squash_with_cranberry.jpg",
-        "originalURL": ""
+        "time": 40
     },
     {
         "name": "Mic's Yorkshire Puds",
@@ -290,19 +247,7 @@
             "Ladle the batter mix into the tin.",
             "Bake for 30 minutes until well browned and risen."
         ],
-        "timers": [
-            0,
-            0,
-            0,
-            30,
-            0,
-            0,
-            5,
-            0,
-            30
-        ],
-        "imageURL": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg",
-        "originalURL": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg"
+        "time": 1
     },
     {
         "name": "Old-Fashioned Oatmeal Cookies",
@@ -380,20 +325,7 @@
             "Bake 8 to 10 minutes or until light brown.",
             "About 6 1/2 dozen cookies."
         ],
-        "timers": [
-            15,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            8,
-            0
-        ],
-        "imageURL": "http://s3.amazonaws.com/gmi-digital-library/65caecf7-a8f7-4a09-8513-2659cf92871e.jpg",
-        "originalURL": "#"
+        "time": 10
     },
     {
         "name": "Blueberry Oatmeal Squares",
@@ -459,18 +391,7 @@
             "Let cool on rack before cutting into squares.",
             "(Make-ahead: Cover and refrigerate for up to 2 days or overwrap with heavy-duty foil and freeze for up to 2 weeks.)"
         ],
-        "timers": [
-            10,
-            1,
-            60,
-            0,
-            0,
-            45,
-            0,
-            0
-        ],
-        "imageURL": "http://www.canadianliving.com/img/photos/biz/blueberry-oatmeal-squares5801359401371.jpg",
-        "originalURL": "http://www.canadianliving.com/food/blueberry_oatmeal_squares.php"
+        "time": 45
     },
     {
         "name": "Curried chicken salad",
@@ -547,18 +468,6 @@
             "Divide among muffins with lettuce leaves",
             "Sandwich with tops"
         ],
-        "timers": [
-            0,
-            0,
-            0,
-            6,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        "imageURL": "http://www.chatelaine.com/wp-content/uploads/2013/05/Curried-chicken-salad.jpg",
-        "originalURL": "http://www.chatelaine.com/recipe/stovetop-cooking-method/curried-chicken-salad/"
+        "time": 10
     }
 ]

@@ -1,27 +1,19 @@
-// import logo from './logo.svg';
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
-import Home from './Pages/Home/Home'
-import Categories from './Pages/Categories/Categories'
-import RecipeListing from './Pages/RecipeListing/RecipeListing'
-import Blog from './Pages/Blog/Blog'
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Landing from './Pages/Landing'
+import Recipes from './Pages/Recipes'
 
-const App = () => (
-      <BrowserRouter>  
-        <Navbar />
-        <Routes>
-          Hello
-          <Route path='/' exact element={<Home />} />
-          <Route path='/recipeListing' element={<RecipeListing />} />
-          <Route path='/categories' element={<Categories />} />
-          <Route path='/blog' element={<Blog />} />
-        </Routes> 
-        <Footer />
-      </BrowserRouter>
-  );
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' exact element={<Landing/>}/>
+        <Route path='/recipes' element={<Recipes />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
 
-
-export default App;
+export default App
