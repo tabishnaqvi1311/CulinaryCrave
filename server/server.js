@@ -1,53 +1,27 @@
-const express = require('express');
+require('dotenv').config()
+const cors = require('cors')
+
+const recipes = require('./routes/routes')
+
+const port = process.env.PORT || 8181;
+
+const express = require('express')
 const app = express();
-const port = 8181;
-const cors = require('cors');
-const connectToMongo = require('./db');
-const User = require('./models/User');
-const Recipe = require('./models/recipeSchema');
 
 
-connectToMongo();
+const connectToDb = require('./db')
+app.use(express.json());
+app.use(cors())
 
-app.use(express.json())
-app.use(cors());
+app.use('/api/v1/recipes', recipes)
 
-
-app.get('/', (req,res) => {
-    res.send('hello');
-});
-
-app.post('/submit', async(req,res) => {
-    console.log(req.body);
-
-
+const start = async () => {
     try {
-        const { userName, userEmail, recipeName, ingreds } = req.body;
-
-        const newRecipe = await Recipe.create({
-            name: userName,
-            ingredients: ingreds,
-            email: userEmail,
-            recipeName: recipeName
-        });
-    
-        res.status(200).json(newRecipe);
-        console.log(`Form Submitted!!!`); 
-        
+        await connectToDb('mongodb://127.0.0.1:27017/recipes')
+        app.listen(port, console.log(`Server running on http://localhost:${port}`))
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ error: "Internal Server Error" });
+        console.log(error);
     }
-});
+}
 
-
-app.get('/api/recipes', async (req,res) => {
-    const recipes = await Recipe.find().limit(9);
-    console.log(recipes);
-    res.json(recipes)
-})
-
-
-app.listen(port, ()=> {
-    console.log(`Server running on http://localhost:${port}`);
-});
+start()
