@@ -8,8 +8,6 @@ const Recipes = () => {
             <h1 className='text-5xl uppercase'>Today's Top Picks</h1>
             <div className='flex flex-row p-10'>
                 <TodayCard />
-                <TodayCard />
-                <TodayCard />
             </div>
         </div>
     </section>
