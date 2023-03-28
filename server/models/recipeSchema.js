@@ -13,14 +13,19 @@ const recipeSchema = new mongoose.Schema({
     type: Array,
     required: [true, 'must provide ingredients']
   },
-  time: {
-    type: Number,
-    default: 1
+  timers: {
+    type: Array,
   },
   steps: {
     type: Array,
     required: true
   },
+  imageURL: {
+    type: String,
+  },
+  originalURL: {
+    type: String
+  }
 })
 
 module.exports = mongoose.model('Recipes', recipeSchema);

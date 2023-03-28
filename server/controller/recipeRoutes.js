@@ -2,7 +2,7 @@ const Recipes = require('../models/recipeSchema')
 
 const getAllRecipes = async(req,res) => {
     try {
-        const recipes = await Recipes.find({})
+        const recipes = await Recipes.find({}).limit(3)
         res.status(200).json({ recipes }) 
     } catch (error) {
         console.log(error);
