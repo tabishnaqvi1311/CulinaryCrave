@@ -469,5 +469,140 @@
             "Sandwich with tops"
         ],
         "time": 10
+    },
+    {
+        "name": "Slow Cooker Chicken Stew",
+        "mealType": "dinner",
+        "ingredients": [
+            {
+                "quantity": "1 lb",
+                "name": "chicken thighs",
+                "type": "Meat"
+            },
+            {
+                "quantity": "2 cups",
+                "name": "chicken broth",
+                "type": "Drinks"
+            },
+            {
+                "quantity": "1 can",
+                "name": "diced tomatoes",
+                "type": "Canned Goods"
+            },
+            {
+                "quantity": "1 onion",
+                "name": "chopped",
+                "type": "Produce"
+            },
+            {
+                "quantity": "3 carrots",
+                "name": "chopped",
+                "type": "Produce"
+            },
+            {
+                "quantity": "3 celery stalks",
+                "name": "chopped",
+                "type": "Produce"
+            },
+            {
+                "quantity": "2 cloves",
+                "name": "garlic",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "dried thyme",
+                "type": "Spices"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "dried rosemary",
+                "type": "Spices"
+            },
+            {
+                "quantity": "1 bay leaf",
+                "name": "",
+                "type": "Spices"
+            },
+            {
+                "quantity": "1/4 cup",
+                "name": "flour",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1/4 cup",
+                "name": "water",
+                "type": "Drinks"
+            }
+        ],
+        "steps": [
+            "Place the chicken thighs in a slow cooker.",
+            "Add the chicken broth, diced tomatoes, chopped onion, chopped carrots, chopped celery, garlic, dried thyme, dried rosemary, and bay leaf to the slow cooker.",
+            "Cook on low for 6-8 hours.",
+            "Remove the chicken from the slow cooker and shred it using two forks.",
+            "In a small bowl, whisk together the flour and water to make a slurry.",
+            "Add the slurry to the slow cooker and stir well.",
+            "Add the shredded chicken back to the slow cooker and stir well.",
+            "Cook for an additional 30 minutes on high, or until the stew has thickened.",
+            "Serve hot."
+        ],
+        "time": 8
+    },
+    {
+        "name": "Blueberry Pancakes",
+        "mealType": "breakfast",
+        "ingredients": [
+            {
+                "quantity": "1 cup",
+                "name": "all-purpose flour",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2 tbsp",
+                "name": "sugar",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2 tsp",
+                "name": "baking powder",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1/4 tsp",
+                "name": "salt",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1 cup",
+                "name": "milk",
+                "type": "Drinks"
+            },
+            {
+                "quantity": "1",
+                "name": "egg",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "2 tbsp",
+                "name": "butter, melted",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "1/2 cup",
+                "name": "blueberries",
+                "type": "Produce"
+            }
+        ],
+        "steps": [
+            "In a large bowl, whisk together flour, sugar, baking powder, and salt.",
+            "In a separate bowl, whisk together milk, egg, and melted butter.",
+            "Add the wet ingredients to the dry ingredients and stir until just combined.",
+            "Gently fold in blueberries.",
+            "Heat a non-stick pan or griddle over medium heat.",
+            "Spoon batter onto the pan and cook until bubbles form on the surface, then flip and cook until golden brown.",
+            "Serve with butter and maple syrup."
+        ],
+        "time": 20
     }
+    
 ]

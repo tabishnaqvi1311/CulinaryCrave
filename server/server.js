@@ -13,7 +13,7 @@ const connectToDb = require('./db')
 app.use(express.json());
 app.use(cors())
 
-app.use('/api/v1/recipes', recipes)
+app.use('/api/v1/recipes', recipes) 
 
 const start = async () => {
     try {
