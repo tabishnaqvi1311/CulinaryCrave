@@ -4,14 +4,19 @@ import RecipeCard from '../components/RecipeCard'
 
 const Recipes = () => {
   return (
-    <section className='bg-others h-[200vh]'>
-        <div className='text-white flex flex-col justify-center items-center pt-10'>
-            <h1 className='text-5xl uppercase'>Today's Top Picks</h1>
-            <div className='flex flex-row p-10'>
+    <section className='bg-others'>
+        <div className='text-white flex flex-col justify-center pt-10'>
+            <h1 className='text-5xl uppercase font-semibold ml-20'>Today's Top Picks</h1>
+            <div className='flex flex-row p-10 justify-center items-center'>
                 <TodayCard />
             </div>
             <hr className='w-7/12'/>
-            <div>
+            <div className='p-5 text-5xl font-semibold ml-20'>
+              See More
+            </div>
+            <div className='flex flex-col justify-center items-center'>
+              <RecipeCard />
+              <RecipeCard />
               <RecipeCard />
             </div>
         </div>
