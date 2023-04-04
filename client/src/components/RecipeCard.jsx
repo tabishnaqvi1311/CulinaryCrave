@@ -10,7 +10,7 @@ const TodayCard = () => {
 
   const getRecipe = async () => {
     try {
-      const response = await fetch("http://localhost:8181/api/v1/recipes")
+      const response = await fetch("http://localhost:8181/api/v1/recipes/")
       const data = await response.json()
       setData(data)
     } catch (error) {

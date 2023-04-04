@@ -5,7 +5,16 @@ const getAllRecipes = async(req,res) => {
         const recipes = await Recipes.find({}).limit(3)
         res.status(200).json({ recipes }) 
     } catch (error) {
-        console.log(error);
+        res.status(500).json({msg: error})
+    }
+}
+
+const getRandom = async(req, res) => {
+    try {
+        const recipes = await Recipes.aggregate([{ $sample: {size: 3} }]);
+        res.status(200).json({ recipes })
+    } catch (error) {
+        res.status(500).json({msg: error})
     }
 }
 
@@ -14,7 +23,7 @@ const createRecipe = async(req,res) => {
         const recipes = await Recipes.create(req.body)
         res.status(201).json({ recipes }) 
     } catch (error) {
-        console.log(error);
+        res.status(500).json({msg: error})
     }    
 }
 
@@ -43,4 +52,4 @@ const deleteRecipe = async(req,res) => {
     }
 }
 
-module.exports = { getAllRecipes, getRecipe, createRecipe, deleteRecipe }
+module.exports = { getAllRecipes, getRecipe, createRecipe, deleteRecipe, getRandom }
