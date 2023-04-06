@@ -28,7 +28,7 @@ const TodayCard = () => {
         <div className='flex flex-row flex-1 items-center'>
           {data.recipes && data.recipes.map((recipe) => (
             <div className='h-[350px] w-[280px] object-contain mx-20 rounded-xl bg-slate-900 shadow-xl shadow-slate-800'>
-              <img src={recipe.imageURL} height='200' width='280' className='object-contain rounded-xl brightness-75 ' />
+              <img src={recipe.imageURL} height='200' width='280' className='object-contain rounded-xl brightness-75' alt='imageURL'/>
               <ul key={recipe.id}>
                 {console.log(recipe.imageURL)}
                 <div className='flex flex-row items-center'>
