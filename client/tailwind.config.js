@@ -9,6 +9,9 @@ module.exports = {
         accents: '#D6BA73',
         others: '#222E50'
       },
+      backgroundImage: {
+        'swiper': "url('/src/assets/slide3.jpg')"
+      },
     },
     screens: {
       xs: "480px",
