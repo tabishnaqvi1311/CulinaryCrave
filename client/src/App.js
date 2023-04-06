@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Landing from './Pages/Landing'
 import Recipes from './Pages/Recipes'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path='/' exact element={<Landing/>}/>
         <Route path='/recipes' element={<Recipes />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
