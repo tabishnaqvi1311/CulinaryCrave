@@ -1,6 +1,6 @@
 import React from 'react'
 import { navItems } from '../constants/module'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import close from '../assets/close.svg'
 import menu from '../assets/menu.svg'
 import { useState } from 'react'
