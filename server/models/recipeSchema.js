@@ -20,9 +20,9 @@ const recipeSchema = new mongoose.Schema({
     type: Array,
     required: true
   },
-  // imageURL: {
-  //   type: String,
-  // },
+  imageURL: {
+    type: String,
+  },
   // originalURL: {
   //   type: String
   // }
