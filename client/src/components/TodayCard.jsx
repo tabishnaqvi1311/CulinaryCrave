@@ -27,19 +27,19 @@ const TodayCard = () => {
       <div className='p-10'>
         <div className='flex flex-row flex-1 items-center'>
           {data.recipes && data.recipes.map((recipe) => (
-            <div className='h-[350px] w-[280px] object-contain mx-20 rounded-xl bg-slate-900 shadow-xl shadow-slate-800'>
+            <div className='h-[350px] w-[280px] object-contain mx-20 rounded-xl bg-white shadow-[25px_25px_1px_-15px_rgba(0,0,0,0.3)] shadow-black hover:translate-y-2 hover:translate-x-2 hover:shadow-[18px_18px_2px_-15px_rgba(0,0,0,0.3)] hover:shadow-black'>
               <img src={recipe.imageURL} height='200' width='280' className='object-contain rounded-xl brightness-75' alt='imageURL'/>
               <ul key={recipe.id}>
                 {console.log(recipe.imageURL)}
                 <div className='flex flex-row items-center'>
-                  <li className='p-5 text-xl text-white'>
+                  <li className='py-7 text-xl text-others font-medium w-full'>
                     {recipe.name}
                   </li>
-                  <IoMdTimer size={22} color='#fff' />
-                  <span>{recipe.time} min</span>
+                  <IoMdTimer size={22} color='#000' />
+                  <span className='text-others font-medium'>{recipe.time} min</span>
                 </div>
                 <div>
-                  <Link id='floaty' className='bg-[#FF6347] p-3' to={recipe.originalURL}>See More</Link>
+                  <Link id='floaty' className='bg-[#FF6347] p-3 rounded-tr-xl rounded-br-xl opacity-80' to={recipe.originalURL}>See More</Link>
                 </div>
               </ul>
             </div>
