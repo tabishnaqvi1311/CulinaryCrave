@@ -57,13 +57,20 @@ const deleteRecipe = async(req,res) => {
 
 const searchRecipe = async(req,res) => {
     const quer = req.query.q;
-    console.log(quer);
-    const regex = new RegExp(quer, 'i');
+    // console.log(quer);
+    const lower = quer.toLowerCase()
+    // const regex = new RegExp(quer, 'i');
 
     try{
-        const result = await Recipes.find({ name: quer })
+        const result = await Recipes.find({ name: {$regex: lower}});
+        // const resultStr = await JSON.stringify(result);
+        // console.log(resultStr.includes(lower), resultStr)
+        // if(resultStr.includes(lower)){
+        // }
+        // console.log(result)
         res.json(result);
-    } 
+        // res.json({msg: 'not found'})
+    }
     catch(err){
         res.status(500).json({msg: err})
     }
