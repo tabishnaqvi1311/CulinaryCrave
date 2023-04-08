@@ -4,6 +4,7 @@ import { navItems } from '../constants/module'
 import close from '../assets/close.svg'
 import menu from '../assets/menu.svg'
 import { useState } from 'react'
+import SearchBar from './SearchBar'
 
 const Navbar = () => {
 
@@ -22,6 +23,7 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
+                <SearchBar />
                 <div className='sm:hidden flex flex-1 justify-end items-center'>
                     <img src={toggle ? close : menu} alt='img' className='w-[28px] h-[28px] object-contain' onClick={() => settoggle((prev) => !prev)} />
                     <div className={`${toggle ? 'flex' : 'hidden'} p-4 bg-gradient-to-tr from-accents to-gray-700 absolute top-14 right-0 mx-4 my-2 min-w-[140px] rounded-xl z-10`}>

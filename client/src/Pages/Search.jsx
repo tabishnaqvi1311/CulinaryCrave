@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams,Link } from 'react-router-dom'
 import { IoMdTimer } from "react-icons/io";
 
 const Search = () => {
@@ -18,15 +18,21 @@ const Search = () => {
   }, [query])
 
   return (
-    <section className='bg-others h-[90vh]'>
+    <section className={`bg-others ${results.length < 3?'h-[100vh]':'h-auto'}`}>
       <div>
         <h1 className='p-10 text-4xl text-white'>Search Results For {query} :</h1>
-        <div className='flex flex-col justify-center items-center my-20'>
+        <p className={`${results.length === 0?'block':'hidden'} p-10 text-5xl text-accents`} >No results found :/ Try &rarr;<Link to='/recipes' className='underline'>Recipes</Link></p>
+        <div className='flex flex-col justify-center items-center mt-10'>
           {/* {console.log(results.length)} */}
           {results.map((recipe) => (
-            <div key={recipe._id} className='border-4 border-others rounded-lg w-1/3 p-5 shadow-[25px_25px_1px_-15px_rgba(0,0,0,0.3)] shadow-black hover:translate-y-2 hover:translate-x-2 hover:shadow-[18px_18px_2px_-15px_rgba(0,0,0,0.3)] hover:shadow-black bg-white'>
-              <p className='text-others font-medium text-3xl '>{recipe.name}</p>
-              <p className='mt-5 bg-pink-300 inline-flex rounded-3xl px-3'>{recipe.mealType}</p>
+            <div key={recipe._id} className='border-4 border-others rounded-lg w-1/3 p-5 shadow-[22px_22px_1px_-15px_rgba(0,0,0,0.3)] shadow-accents hover:translate-y-2 hover:translate-x-2 hover:shadow-[0px_0px_0px_0px_rgba(0,0,0,0.3)] hover:shadow-black bg-white mb-10'>
+              <p className='text-others font-medium text-3xl capitalize'>{recipe.name}</p>
+              <p className={`mt-5 ${
+                recipe.mealType === 'breakfast'?'bg-pink-300'
+                :
+                recipe.mealType === 'lunch'?'bg-blue-300'
+                :
+                'bg-violet-300'} inline-flex rounded-3xl px-3`}>{recipe.mealType}</p>
               <span className='mt-5 px-3 inline-flex items-center'><IoMdTimer /><p className='mx-2'>{recipe.time}</p></span>
             </div>
           ))}
