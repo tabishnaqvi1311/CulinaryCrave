@@ -17,7 +17,7 @@ app.use('/api/v1/recipes', recipes)
 
 const start = async () => {
     try {
-        await connectToDb('mongodb://127.0.0.1:27017/recipes')
+        await connectToDb(process.env.MONGO_URI)
         app.listen(port, console.log(`Server running on http://localhost:${port}`))
     } catch (error) {
         console.log(error);
