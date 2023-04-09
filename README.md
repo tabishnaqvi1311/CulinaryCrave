@@ -1,10 +1,21 @@
 # CulinaryCrave
 
-Dynamic Recipe Website with Features Such as Blog Posts, Liking and Rating Recipes and an amazing UI/UX experience
+Dynamic Recipe Website with over 100 recipes and an amazing UI/UX.
+
+It has:
+ - Elegant design
+ - A fully functional backend, with a RESTapi
+ - Database hosted on Atlas, with over 100 recipes
+ - Search functionality
+ - A featured sections, as well as a feed section
+
+It needs: (these are features that I plan on adding somewhere in the future, but the website works just fine without them)
+ - Auth using JWT
+ - Likes, rating, reviews
 
 ## Made Using 
 
-CSS, Node, Express, Mongodb 
+React, Tailwind, Node, Express, Mongodb 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -21,8 +32,9 @@ You may also see any lint errors in the console.
 
 ## Aims
 
-- Switching from basic CSS to Tailwind
-- Learning how to handle big databases, and optimizing backend, all while practicing my Front-End skills
+[x] Switching from basic CSS to Tailwind
+[x] Learning how to handle big databases, and optimizing backend, all while practicing my Front-End skills
+[x] Learn how to work with RESTapis
 
 ## You Can Contribute!
 
