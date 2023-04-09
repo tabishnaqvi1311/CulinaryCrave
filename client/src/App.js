@@ -5,6 +5,7 @@ import Landing from './Pages/Landing'
 import Recipes from './Pages/Recipes'
 import Search from './Pages/Search'
 import Footer from './components/Footer'
+import RecipeDetail from './Pages/RecipeDetail'
 import './App.css'
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path='/' exact element={<Landing/>}/>
         <Route path='/recipes' element={<Recipes />} />
+        <Route path='/recipes/:id' element={<RecipeDetail />} />
         <Route path='/search/:query' element={<Search/>} />
       </Routes>
       <Footer />

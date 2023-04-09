@@ -12,4 +12,14 @@ html {
   scroll-behavior: smooth;
 }
 
+th {
+  padding: 10px;
+  border: 1px solid;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid;
+}
+
 

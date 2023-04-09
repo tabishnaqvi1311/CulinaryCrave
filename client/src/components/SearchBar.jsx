@@ -26,7 +26,7 @@ const SearchBar = () => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input type='search' className=' bg-slate-200 p-2 rounded-xl text-center focus:outline-none focus:px-12' placeholder={`🔍Search Recipes`} value={searchTerm} onChange={e => setSearchTerm(e.target.value)} />
+                <input type='search' className=' bg-slate-200 p-2 rounded-xl text-center focus:outline-none focus:pr-20' placeholder={`🔍Search Recipes`} value={searchTerm} onChange={e => setSearchTerm(e.target.value)} />
             </form>
         </div>
     )

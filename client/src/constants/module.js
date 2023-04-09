@@ -18,3 +18,26 @@ export const navItems = [
         textSize: false
     },
 ]
+
+export const contents = [
+    {
+        id: 'ing',
+        title: 'Ingredients',
+        linkTo: '#ingredients'
+    },
+    {
+        id: 'steps',
+        title: 'Steps',
+        linkTo: '#steps'
+    },
+    {
+        id: 'comm',
+        title: 'Comments',
+        linkTo: '#comments'
+    },
+    {
+        id: 'see',
+        title: 'See More',
+        linkTo: '#see-more'
+    }
+]

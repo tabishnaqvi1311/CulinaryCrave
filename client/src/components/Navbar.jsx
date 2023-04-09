@@ -11,8 +11,8 @@ const Navbar = () => {
     const [toggle, settoggle] = useState(false)
 
     return (
-        <div className={`flex bg-white`}>
-            <nav className='w-full flex py-6 justify-between items-baseline navbar mx-5 shadow-md'>
+        <div className={`flex bg-white sticky top-0 z-10`}>
+            <nav className='w-full flex py-6 justify-between items-baseline navbar mx-5 shadow-lg'>
                 {/* <CirlcleWithLetter /> */}
                 <ul className='list-none sm:flex hidden items-center flex-1'>
                     {navItems.map((nav) => (
