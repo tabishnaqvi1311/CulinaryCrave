@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { contents } from '../constants/module'
+import { GridLoader } from 'react-spinners'
 
 const RecipeDetail = () => {
 
@@ -10,7 +11,7 @@ const RecipeDetail = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:8181/api/v1/recipes/${id}`)
+        fetch(`https://culinarycrave-production.up.railway.app/api/v1/recipes/${id}`)
             .then((response) => response.json())
             .then((data) => setResult(data))
             .catch((err) => console.log(err))
@@ -19,12 +20,12 @@ const RecipeDetail = () => {
 
     return (
         <section>
-            <div className='p-10 ml-10 text-others'>
-                <h1 className='capitalize text-6xl mb-5 font-semibold'>{Object.entries(result).length === 0 ? 'loading...'
+            <div className='p-10 lg:ml-10 text-others'>
+                <h1 className='capitalize lg:text-6xl text-5xl mb-5 font-semibold'>{Object.entries(result).length === 0 ? <GridLoader color='#222e50'/>
                     :
                     result.recipe.name}
                 </h1>
-                <span className={`bg-blue-300 px-5 rounded-xl`}>{Object.entries(result).length === 0?'loading...'
+                <span className={`bg-blue-300 px-5 rounded-xl`}>{Object.entries(result).length === 0?''
                 :
                 result.recipe.mealType}
                 </span>
@@ -47,7 +48,7 @@ const RecipeDetail = () => {
                                     <th>Type</th>
                                 </tr>
                             </thead>
-                            <tbody className='p-10'>{Object.entries(result).length === 0 ? 'loading...'
+                            <tbody className='p-10'>{Object.entries(result).length === 0 ? <GridLoader color='#222e50'/>
                                 :
                                 result.recipe.ingredients.map((ingred) => (
 
@@ -62,7 +63,7 @@ const RecipeDetail = () => {
                     <div className='border-4 border-others border-double p-5 my-10'>
                         <h1 className='text-5xl font-medium'>Steps</h1>
                         <div className='w-2/3 inline'>
-                                {Object.entries(result).length === 0? 'loading...'
+                                {Object.entries(result).length === 0? <GridLoader color='#222e50'/>
                                 :
                                 result.recipe.steps.map((step) => (
                                     <li className='list-decimal m-5 text-[16.5px] '>{step}</li>
@@ -70,7 +71,7 @@ const RecipeDetail = () => {
                         </div>
                     </div>
                 </section>
-                <section className='h-96' id='comments'>
+                <section className='h-20' id='comments'>
                     <h1 className='text-5xl font-medium my-10'>Comments</h1>
                 </section>
             </div>

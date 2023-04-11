@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { IoMdTimer } from "react-icons/io";
+import { GridLoader } from 'react-spinners'
 
 const Search = () => {
 
@@ -9,7 +10,7 @@ const Search = () => {
   const [results, setResults] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:8181/api/v1/recipes/search?q=${query}`)
+    fetch(`https://culinarycrave-production.up.railway.app/api/v1/recipes/search?q=${query}`)
       .then((response) => response.json())
       .then((data) => setResults(data))
       // .then((data) => console.log())
@@ -21,7 +22,9 @@ const Search = () => {
     <section className={`bg-others ${results.length < 3 ? 'h-[100vh]' : 'h-auto'}`}>
       <div>
         <h1 className='p-10 text-4xl text-white'>Search Results For {query} :</h1>
-        <p className={`${results.length === 0 ? 'block' : 'hidden'} p-10 text-5xl text-accents`} >No results found :/ Try &rarr;<Link to='/recipes' className='underline'>Recipes</Link></p>
+        <p className={`${results.length === 0 ? 'block' : 'hidden'} p-10 text-5xl text-accents flex justify-center items-center`} >
+          <GridLoader color='#d6ba73'/>
+          </p>
         <div className='flex flex-col justify-center items-center mt-10'>
           {/* {console.log(results.length)} */}
           {results.map((recipe) => (

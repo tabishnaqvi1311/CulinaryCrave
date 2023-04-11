@@ -10,7 +10,7 @@ const TodayCard = () => {
 
   const getRecipe = async () => {
     try {
-      const response = await fetch("http://localhost:8181/api/v1/recipes/random")
+      const response = await fetch("https://culinarycrave-production.up.railway.app/api/v1/recipes/random")
       const data = await response.json()
       console.log(data)
       setData(data)
@@ -25,12 +25,12 @@ const TodayCard = () => {
 
   return (
     <>
-      <div className='p-10'>
-        <div className='flex flex-row flex-1 items-center'>
+      <div className='lg:p-10 p-5'>
+        <div className='flex lg:flex-row flex-col flex-1 items-center '>
           {data.recipes && data.recipes.map((recipe) => (
-            <div className='h-[350px] w-[280px] object-contain mx-20 rounded-xl bg-slate-900 shadow-xl shadow-slate-800'>
+            <div className=' object-contain mx-20 rounded-xl bg-slate-900 lg:my-2 my-5 shadow-xl shadow-slate-800'>
                 <Link to={`/recipes/${recipe._id}`}>
-                <img src={recipe.imageURL} height='170' width='250' className='object-contain rounded-xl brightness-75' alt='imageURL' />
+                {/* <img src={recipe.imageURL} height='170' width='250' className='object-contain rounded-xl brightness-75' alt='imageURL' /> */}
                 <ul key={recipe.id}>
                   {/* {console.log(recipe.imageURL)} */}
                   <div className='flex flex-row items-center'>
@@ -42,9 +42,9 @@ const TodayCard = () => {
                       <span className='font-medium text-xs w-full'>{recipe.time} min</span>
                     </div>
                   </div>
-                  <div className='my-3'>
-                    <Link id='floaty' className='bg-[#d5ae4d] p-3 rounded-tr-xl rounded-br-xl opacity-80' to={recipe.originalURL}>See More</Link>
-                  </div>
+                  {/* <div className='my-3'> */}
+                    {/* <Link id='floaty' className='bg-[#d5ae4d] p-3 rounded-tr-xl rounded-br-xl opacity-80' to={recipe.originalURL}>See More</Link> */}
+                  {/* </div> */}
                 </ul>
               </Link>
             </div>

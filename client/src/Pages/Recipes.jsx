@@ -15,9 +15,9 @@ const Recipes = () => {
               See More
             </div>
             <div className='flex flex-col justify-center items-center'>
-              <RecipeCard />
-              <RecipeCard />
-              <RecipeCard />
+              <div><RecipeCard /></div>
+              <div><RecipeCard /></div>
+              <div><RecipeCard /></div>
             </div>
         </div>
     </section>
