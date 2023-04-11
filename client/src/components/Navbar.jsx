@@ -26,10 +26,10 @@ const Navbar = () => {
                 <SearchBar />
                 <div className='sm:hidden flex flex-1 justify-end items-center'>
                     <img src={toggle ? close : menu} alt='img' className='w-[28px] h-[28px] object-contain' onClick={() => settoggle((prev) => !prev)} />
-                    <div className={`${toggle ? 'flex' : 'hidden'} p-4 bg-gradient-to-tr from-accents to-gray-700 absolute top-14 right-0 mx-4 my-2 min-w-[140px] rounded-xl z-10`}>
+                    <div className={`${toggle ? 'flex' : 'hidden'} p-1 bg-others absolute top-14 right-0 mx-4 my-2 min-w-[140px] rounded-xl z-10`}>
                         <ul className='list-none flex flex-col justify-end items-center flex-1'>
                             {navItems.map((nav) => (
-                                <li key={nav.id} className={`cursor-pointer text-black text-[16px] uppercase tracking-widest my-5 mx-5 p-3`}>
+                                <li key={nav.id} className={`cursor-pointer text-white text-[16px] uppercase tracking-widest my-3 mx-3 p-3`}>
                                     <a href={`${nav.routeTo}`}>
                                         {nav.title}
                                     </a>
