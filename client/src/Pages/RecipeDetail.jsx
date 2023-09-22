@@ -11,7 +11,7 @@ const RecipeDetail = () => {
 
 
     useEffect(() => {
-        fetch(`https://culinarycrave-production.up.railway.app/api/v1/recipes/${id}`)
+        fetch(`http://localhost:8181/api/v1/recipes/${id}`)
             .then((response) => response.json())
             .then((data) => setResult(data))
             .catch((err) => console.log(err))

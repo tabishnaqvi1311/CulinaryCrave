@@ -5,6 +5,7 @@ import close from '../assets/close.svg'
 import menu from '../assets/menu.svg'
 import { useState } from 'react'
 import SearchBar from './SearchBar'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -23,7 +24,11 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-                <SearchBar />
+                <div className='flex gap-10 items-center'>
+                    <SearchBar />
+                    <Link to={"/login"} className='uppercase'>Login</Link>
+                    <Link to={"/signup"} className='border-[#3b518b] border-2 p-2 rounded-xl uppercase'>Signup</Link>
+                </div>
                 <div className='sm:hidden flex flex-1 justify-end items-center'>
                     <img src={toggle ? close : menu} alt='img' className='w-[28px] h-[28px] object-contain' onClick={() => settoggle((prev) => !prev)} />
                     <div className={`${toggle ? 'flex' : 'hidden'} p-1 bg-others absolute top-14 right-0 mx-4 my-2 min-w-[140px] rounded-xl z-10`}>

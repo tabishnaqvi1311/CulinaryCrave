@@ -10,7 +10,7 @@ const TodayCard = () => {
 
   const getRecipe = async () => {
     try {
-      const response = await fetch("https://culinarycrave-production.up.railway.app/api/v1/recipes/random")
+      const response = await fetch("http://localhost:8181/api/v1/recipes/random")
       const data = await response.json()
       console.log(data)
       setData(data)

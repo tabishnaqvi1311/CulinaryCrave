@@ -10,7 +10,7 @@ const Search = () => {
   const [results, setResults] = useState([]);
 
   useEffect(() => {
-    fetch(`https://culinarycrave-production.up.railway.app/api/v1/recipes/search?q=${query}`)
+    fetch(`http://localhost:8181/api/v1/recipes/search?q=${query}`)
       .then((response) => response.json())
       .then((data) => setResults(data))
       // .then((data) => console.log())

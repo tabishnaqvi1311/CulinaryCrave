@@ -7,6 +7,8 @@ import Search from './Pages/Search'
 import Footer from './components/Footer'
 import RecipeDetail from './Pages/RecipeDetail'
 import './App.css'
+import Login from './Pages/Login'
+import Signup from './Pages/Signup'
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <Route path='/recipes' element={<Recipes />} />
         <Route path='/recipes/:id' element={<RecipeDetail />} />
         <Route path='/search/:query' element={<Search/>} />
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
