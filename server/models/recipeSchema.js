@@ -23,9 +23,6 @@ const recipeSchema = new mongoose.Schema({
   imageURL: {
     type: String,
   },
-  // originalURL: {
-  //   type: String
-  // }
 })
 
 module.exports = mongoose.model('Recipes', recipeSchema);

@@ -1,4 +1,4 @@
-const Recipes = require('../models/recipeSchema')
+const Recipes = require('../models/recipeSchema');
 
 const getAllRecipes = async(req,res) => {
     try {
@@ -9,6 +9,20 @@ const getAllRecipes = async(req,res) => {
     }
 }
 
+const getRecipe = async(req,res) => {
+
+    try {
+        const {id:recipeId} = req.params
+        const recipe = await Recipes.findOne({ _id: recipeId })
+        if(!recipe){
+            return res.status(404).json({msg : 'Recipe Not Found'})
+        }
+        res.status(200).json({ recipe })
+    } catch (error) {
+        res.status(500).json({msg: error})
+        console.log(error)
+    }
+}
 const getRandom = async(req, res) => {
     try {
         const recipes = await Recipes.aggregate([{ $sample: {size: 3} }]);
@@ -27,21 +41,6 @@ const createRecipe = async(req,res) => {
     }    
 }
 
-const getRecipe = async(req,res) => {
-
-    try {
-        const {id:recipeId} = req.params
-        console.log(req.params);
-        const recipe = await Recipes.findOne({ _id: recipeId })
-        if(!recipe){
-            return res.status(404).json({msg : 'Recipe Not Found'})
-        }
-        res.status(200).json({ recipe })
-    } catch (error) {
-        res.status(500).json({msg: error})
-        console.log(error)
-    }
-}
 
 const deleteRecipe = async(req,res) => {
     try {
